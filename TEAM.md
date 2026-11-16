@@ -11,7 +11,7 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Luc Tuan |      |       | tuanvtxm6 | Làm cả nhóm: workflow, single, orchestrator, handoff, crash, eval, report |
+|   1 | Lục Anh Tuấn | 2A202603634 | 26ai.tuanla2@vinuni.edu.vn | tuanvtxm6 | Làm cả nhóm: workflow, single, orchestrator, handoff, crash, eval, report |
 
 Gợi ý chia vai:
 
@@ -24,7 +24,7 @@ Gợi ý chia vai:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| Luc Tuan | Cả ba shape, test, benchmark, báo cáo | `7d579cf` feat: implement workflow, single and orchestrator shapes | `src/tests/test_team_shapes.py` (112 test: ticket nói dối, injection, approval mượn, 3 điểm crash, trace sạch, trần 8 bước, handoff allowlist) |
+| Lục Anh Tuấn | Cả ba shape, test, benchmark, báo cáo | `7d579cf` feat: implement workflow, single and orchestrator shapes | `src/tests/test_team_shapes.py` (112 test: ticket nói dối, injection, approval mượn, 3 điểm crash, trace sạch, trần 8 bước, handoff allowlist) |
 
 ## Cá nhân
 
@@ -38,16 +38,19 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 Sao chép mục dưới đây cho từng thành viên.
 
-## MSSV_HoTen
+## 2A202603634_LucAnhTuan
 
 ### Phần việc phụ trách
 
--
+- Nhóm một người: ba shape `workflow`, `single`, `orchestrator`; test; benchmark và crash suite; ADR, research card, báo cáo nhóm.
 
 ### Đóng góp cụ thể
 
--
+- Viết `src/lab8/shapes/workflow.py`, `single.py`, `orchestrator.py` theo cùng chữ ký `run_claim`.
+- Thêm `src/tests/test_team_shapes.py` (112 test trong cổng host).
+- Sinh `src/reports/benchmark.json` và `src/reports/crash.json` bằng công cụ của lab.
 
 ### Bằng chứng
 
--
+- Commit `7d579cf` (code, test, report JSON) và `16fdeac` (báo cáo).
+- Báo cáo cá nhân: `report/team/2A202603634_LucAnhTuan.md`.
