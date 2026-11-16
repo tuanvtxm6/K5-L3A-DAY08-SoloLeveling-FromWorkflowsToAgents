@@ -24,7 +24,7 @@ Gợi ý chia vai:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| Lục Anh Tuấn | Cả ba shape, test, benchmark, báo cáo | `7d579cf` feat: implement workflow, single and orchestrator shapes | `src/tests/test_team_shapes.py` (112 test: ticket nói dối, injection, approval mượn, 3 điểm crash, trace sạch, trần 8 bước, handoff allowlist) |
+| Lục Anh Tuấn | Cả ba shape, test, benchmark, báo cáo | `963cc2b` feat: implement workflow, single and orchestrator shapes | `src/tests/test_team_shapes.py` (112 test: ticket nói dối, injection, approval mượn, 3 điểm crash, trace sạch, trần 8 bước, handoff allowlist) |
 
 ## Cá nhân
 
@@ -52,5 +52,5 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Bằng chứng
 
-- Commit `7d579cf` (code, test, report JSON) và `16fdeac` (báo cáo).
+- Commit `963cc2b` (code, test, report JSON) và `4d6f53d` (báo cáo).
 - Báo cáo cá nhân: `report/team/2A202603634_LucAnhTuan.md`.

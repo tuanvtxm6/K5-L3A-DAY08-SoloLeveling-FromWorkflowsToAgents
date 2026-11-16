@@ -20,8 +20,8 @@ Nhóm SoloLeveling chỉ có một thành viên nên tôi phụ trách toàn b�
 
 Commit chính:
 
-- `7d579cf` — feat: implement workflow, single and orchestrator shapes (ba file shape, `src/tests/test_team_shapes.py`, `src/reports/benchmark.json`, `src/reports/crash.json`).
-- `16fdeac` — docs: fill ADR, research card, group report and team table.
+- `963cc2b` — feat: implement workflow, single and orchestrator shapes (ba file shape, `src/tests/test_team_shapes.py`, `src/reports/benchmark.json`, `src/reports/crash.json`).
+- `4d6f53d` — docs: fill ADR, research card, group report and team table.
 
 Test đã thêm: `src/tests/test_team_shapes.py`, 112 test chạy trong cổng host (`python -m pytest -q`):
 
