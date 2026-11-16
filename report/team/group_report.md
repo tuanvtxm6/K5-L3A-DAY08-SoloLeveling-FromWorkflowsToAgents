@@ -55,7 +55,8 @@ Bộ public: 14 claim × 5 seed = 70 trial mỗi shape. Nguồn: `src/reports/be
 - Cột steps là số event trong trace nên phụ thuộc mức chi tiết mỗi shape ghi. Single có 9.93 event nhưng vòng ReAct chỉ chạy tối đa 4 bước, dưới trần 8. Swarm ít event nhất vì ghi ít chứ không phải làm ít. Để so khối lượng việc, dùng cost, model call và tool call.
 - Crash safety: `20/20` (`src/reports/crash.json`).
 - Ma trận student: `python -m pytest -q -m student -o addopts=` ra 248 passed. Cổng host: `python -m pytest -q` ra 166 passed, gồm 112 test nhóm thêm trong `src/tests/test_team_shapes.py`.
-- Tự kiểm hidden: chưa chạy vì nhóm không có thư mục `student_drop/`.
+- Tự kiểm hidden (`src/reports/hidden_selfcheck.json`, 40 claim × 5 seed, không có nhãn): mỗi shape chạy hết 200 trial, 0 trial `error`, 0 trial `leak_suspect`. Ba shape cho cùng phân bố status: 95 `denied`, 90 `resolved`, 10 `escalated`, 5 `needs_info`. File này không cho pass rate.
+- Ngoài ra nhóm tự viết một bộ đối chiếu độc lập: suy kết quả mong đợi của 40 claim hidden thẳng từ `docs/business_rules.md` và file world, không dùng `compensation.py` hay `policy.py`, rồi so `status`, `proposal_amount`, số tiền ledger và audit `policy_denied` của từng trial. Kết quả: 0 lệch trên 600 trial (3 shape), 0 trial chứa SĐT, địa chỉ, tên hàng, ghi chú nội bộ, ticket hay principal trong trace. Đây là kết quả tự suy của nhóm, không phải nhãn của giảng viên.
 
 Quyết định kiến trúc và lý do: xem `report/team/decision_adr.md`. Phiếu nghiên cứu và ablation: xem `report/team/research_card.md`.
 
@@ -77,7 +78,7 @@ MockLLM không phải model sản xuất; latency là `unavailable`.
 - MockLLM không bao giờ chọn sai tool hay bịa số, nên variance 0 của single và orchestrator không dự báo được hành vi với model thật. Với model thật, phần `decide` của single phải được thay bằng lời gọi model và đo lại trên nhiều seed.
 - Bộ public chỉ có 14 claim và workflow đã đạt trần, nên benchmark này không phân biệt được ba shape về độ đúng. Kết luận "workflow đủ dùng" chỉ đúng cho loại claim mà mọi dữ kiện nằm sẵn trong order và policy.
 - Kết luận sẽ đổi nếu claim cần hiểu ngôn ngữ tự do mà code không xử lý được, hoặc nếu việc điều tra tách được thành nhánh song song và latency trở thành tiêu chí. Điều kiện cụ thể ghi trong ADR.
-- Hướng cải thiện: chạy tự kiểm trên `student_drop/` khi có; thêm ablation orchestrator một investigator so với hai investigator để tách chi phí của từng handoff.
+- Hướng cải thiện: thêm ablation orchestrator một investigator so với hai investigator để tách chi phí của từng handoff.
 
 ## 8. Tài liệu tham khảo
 

@@ -64,5 +64,6 @@ Quyết định kỹ thuật:
 ## 6. Tự đánh giá
 
 - Đã đạt: ba shape qua toàn bộ ma trận public, crash 20/20, không lộ secret trên bộ public, `check_submission` 0 FAIL.
-- Chưa đạt: chưa tự kiểm trên `student_drop/` vì không có thư mục này, nên chưa biết pass rate hidden. Chưa làm bonus.
+- Tự kiểm hidden (`src/reports/hidden_selfcheck.json`): ba shape chạy hết 200 trial, 0 `error`, 0 `leak_suspect`. Bộ này không có nhãn nên chưa biết pass rate hidden chính thức.
+- Chưa đạt: chưa làm bonus.
 - Giới hạn: kết quả đo trên MockLLM và 14 claim public; variance 0 của single và orchestrator không dự báo được hành vi với model thật.

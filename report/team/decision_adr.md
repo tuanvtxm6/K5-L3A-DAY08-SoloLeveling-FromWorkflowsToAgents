@@ -56,6 +56,6 @@ MockLLM không phải model sản xuất. Latency để `unavailable`. Không s�
 
 - MockLLM cố định theo seed và không bao giờ chọn sai tool, nên variance 0 của single và orchestrator là giới hạn dưới, không phải dự báo cho model thật.
 - Bộ public chỉ có 14 claim. Pass rate 1.000 trên 70 trial không suy ra được pass rate trên 200 trial hidden.
-- Nhóm không có thư mục `student_drop/` nên chưa chạy tự kiểm hidden; không có file `hidden_selfcheck.json`.
+- Tự kiểm trên `student_drop/` (`src/reports/hidden_selfcheck.json`, 40 claim × 5 seed × 3 shape) không có nhãn nên không ra pass rate. Nó chỉ cho biết: 0 trial `error`, 0 trial `leak_suspect`, trace đúng contract, và ba shape cho cùng phân bố status (95 `denied`, 90 `resolved`, 10 `escalated`, 5 `needs_info` trên 200 trial). Pass rate hidden chính thức do giảng viên chấm.
 - Cost là VND mô phỏng theo `config/pricing.yaml`, không phải hóa đơn API.
 - Cột steps đếm số event trong trace, phụ thuộc vào việc mỗi shape ghi chi tiết đến đâu. Nó không so được khối lượng việc giữa các shape; dùng cost, model call và tool call để so.
