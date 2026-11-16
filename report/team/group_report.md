@@ -84,4 +84,4 @@ MockLLM không phải model sản xuất; latency là `unavailable`.
 
 - Tài liệu của lab: `README.md`, `docs/business_rules.md`, `docs/contracts.md`, `docs/metrics.md`, `docs/architecture.md`.
 - Code tham chiếu: `src/lab8/shapes/swarm_reference.py`, `src/lab8/durability.py`, `src/lab8/handoff.py`, `src/lab8/runtime.py`.
-- Google Research, *Towards a Science of Scaling Agent Systems* (thư viện tham khảo của buổi lý thuyết, slide 68–69).
+- Kim và cộng sự (Google Research), *Towards a Science of Scaling Agent Systems*, arXiv:2512.08296, 2025. https://arxiv.org/abs/2512.08296

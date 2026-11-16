@@ -59,7 +59,7 @@ Quyết định kỹ thuật:
 - Dùng vào việc: đọc codebase và tài liệu của lab; viết code ba shape và file test `test_team_shapes.py`; chạy các lệnh benchmark, crash suite và `check_submission`; soạn bản nháp ADR, research card, báo cáo nhóm và báo cáo này.
 - Số liệu không do AI tự đặt ra: mọi con số trong báo cáo lấy từ `src/reports/benchmark.json` và `src/reports/crash.json` do công cụ của lab sinh ra; không file JSON nào bị sửa tay.
 - Cách tự kiểm tra: chạy lại `python -m pytest -q`, ma trận student, benchmark và crash suite trên máy mình và đối chiếu với số trong báo cáo; đọc lại ba file shape để kiểm ranh giới code / model (model không chọn số tiền, không gọi tool ghi) và việc truyền quote đầy đủ vào host; mở file trace trong `src/traces/` để xác nhận không có secret hay PII.
-- Phần chưa kiểm được: nguồn trích dẫn trong research card (link arXiv và tóm tắt kết luận của paper) cần đối chiếu với slide 68–69.
+- Nguồn trong research card: đã mở trang arXiv 2512.08296 để đối chiếu tên paper, tác giả, ngày và các con số trích từ abstract; các ô của phiếu đối chiếu với slide 69 (SOURCE, CLAIM, BOUNDARY, HYPOTHESIS, CONTROL, FALSIFY).
 
 ## 6. Tự đánh giá
 
